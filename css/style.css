@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 /* Body */
+
 body{
     margin: 0;
     padding: 0;
@@ -8,14 +9,13 @@ body{
 }
 
 /* Header section */
+
 header{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* background-color: #49494947; */
     padding: 10px;
-    /* width: 70%; */
 }
 
 .logo{
@@ -27,21 +27,13 @@ header{
     height: 100%;
 }
 
-nav{
-    /* background-color: powderblue; */
-    /* margin: 0 auto; */
-    /* margin-left: 160px; */
-}
-
 .nav__links{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-wrap: wrap; */
     padding: 0;
     list-style: none;
     margin: 0;
-    /* background-color: black; */
 }
 
 .nav__links li a{
@@ -50,7 +42,6 @@ nav{
     text-decoration: none;
     color: black;
     transition: all .1s ease-in-out;
-    /* border-bottom: 2px solid transparent; */
 }
 
 .nav__links li .active, .nav__links li a:hover{
@@ -59,6 +50,7 @@ nav{
 }
 
 /* Hero Section */
+
 .home-content{
     width: 60%;
     padding-left: 40px;
@@ -70,13 +62,11 @@ nav{
     height: 98.8vh;
     top: 0;
     right: 0;
-    /* bottom: 0; */
     z-index: -1;
 }
 
 .image img{
     height: 100%;
-    /* opacity: 0.6; */
 }
 
 .home-content .text{
@@ -133,19 +123,14 @@ nav{
 }
 
 .services-content .services{
-    /* display: grid; */
-    /* grid-template-columns: repeat(3, 1fr); */
-    /* grid-gap: 2rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* After doing flex-wrap the items went onto next line */
     margin-top: 50px;
 }
 
 .services-content .services .service{
-    /* background-color: pink; */
     margin: 20px 10px;
     width: 30%;
     text-align: center;
@@ -160,6 +145,7 @@ nav{
 }
 
 /* Footer */
+
 footer{
     background-color: gold;
     color: white;
@@ -192,6 +178,7 @@ footer{
 }
 
 /* Utility classes */
+
 a{
     text-decoration: none;
     color: black;
@@ -230,41 +217,49 @@ a{
 @media screen and (max-width:700px){
 
     /* Navbar */
+    
     header{
         flex-direction: column;
     }
     
     /* Nav Links */
+    
     .nav__links{
         margin-top: 10px;
     }
     
     /* Nav Link */
+    
     .nav__links li a{
         margin: 0 20px;
     }
     
     /* Home BG Image*/
+    
     .home-content .image{
         display: none;
     }
 
     /* Services boxes */
+    
     .services-content .services .service{
         width: 100%;
     }
 
     /* Gallery */
+    
     .gallery{
         grid-template-columns: 1fr;
     }
 
     /* Gallery images */
+    
     .gallery img{
         margin: auto;
     }
 
     /* Coming Soon text */
+    
     .coming-soon h1{
         font-size: 2rem;
     }

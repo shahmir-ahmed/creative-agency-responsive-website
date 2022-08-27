@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+/* Body */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header section */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: #49494947; */
+    padding: 10px;
+    /* width: 70%; */
+}
+
+.logo{
+    height: 50px;
+    cursor: pointer;
+}
+
+.logo img{
+    height: 100%;
+}
+
+nav{
+    /* background-color: powderblue; */
+    /* margin: 0 auto; */
+    /* margin-left: 160px; */
+}
+
+.nav__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    /* background-color: black; */
+}
+
+.nav__links li a{
+    display: block;
+    margin: 0 40px;
+    text-decoration: none;
+    color: black;
+    transition: all .1s ease-in-out;
+    /* border-bottom: 2px solid transparent; */
+}
+
+.nav__links li .active, .nav__links li a:hover{
+    color: gold;
+    border-bottom: 2px solid gold;
+}
+
+/* Hero Section */
+.home-content{
+    width: 60%;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.home-content .image{
+    position: absolute;
+    height: 98.8vh;
+    top: 0;
+    right: 0;
+    /* bottom: 0; */
+    z-index: -1;
+}
+
+.image img{
+    height: 100%;
+    /* opacity: 0.6; */
+}
+
+.home-content .text{
+    font-size: 1.2rem;
+}
+
+.home-content .btn{
+    background-color: gold;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.home-content .btn:hover{
+    transform: scale(-2rem);
+    background-color: rgb(255, 221, 26);
+}
+
+/* Social Links */
+
+.social__links{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.social__links a{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.social__links i:hover{
+    color: gold;
+    background-color: white;
+}
+
+/* Services webpage */
+
+.services-content{
+    width: 80%;
+    margin: auto;
+}
+
+.services-content .services .image{
+    height: 100px;
+}
+
+.services-content .services .image img{
+    height: 100%;
+}
+
+.services-content .services{
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-gap: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* After doing flex-wrap the items went onto next line */
+    margin-top: 50px;
+}
+
+.services-content .services .service{
+    /* background-color: pink; */
+    margin: 20px 10px;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.services-content .services .service:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 8px 3px gainsboro, -1px -1px 8px 3px gainsboro;
+}
+
+/* Footer */
+footer{
+    background-color: gold;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* Work Webpage */
+
+.work-content{
+    width: 80%;
+    margin: auto;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.gallery img{
+    height: 300px;
+    width: 300px;
+}
+
+.gallery img:hover{
+    box-shadow: 1px 1px 8px 3px gainsboro, -1px -1px 8px 3px gainsboro;
+}
+
+/* Utility classes */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Contact Us Webpage */
+
+.coming-soon h1{
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) {
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:700px){
+
+    /* Navbar */
+    header{
+        flex-direction: column;
+    }
+    
+    /* Nav Links */
+    .nav__links{
+        margin-top: 10px;
+    }
+    
+    /* Nav Link */
+    .nav__links li a{
+        margin: 0 20px;
+    }
+    
+    /* Home BG Image*/
+    .home-content .image{
+        display: none;
+    }
+
+    /* Services boxes */
+    .services-content .services .service{
+        width: 100%;
+    }
+
+    /* Gallery */
+    .gallery{
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery images */
+    .gallery img{
+        margin: auto;
+    }
+
+    /* Coming Soon text */
+    .coming-soon h1{
+        font-size: 2rem;
+    }
+}
